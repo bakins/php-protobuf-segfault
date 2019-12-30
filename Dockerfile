@@ -13,6 +13,8 @@ RUN pecl install grpc-1.26.0 && \
 
 ENV VERSION=3.11.2
 
+ENV CFLAGS='-g -O0'
+
 ## we want to keep source for gdb inspection
 RUN cd /usr/src && \
     curl -L -O https://pecl.php.net/get/protobuf-${VERSION}.tgz && \
