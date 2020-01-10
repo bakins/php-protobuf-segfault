@@ -8,13 +8,3 @@ edit Dockerfile and change VERSION to test different versions of the extension.
 
 Run `./run.sh` to test.  `gdb` should be called automatically if there is a segfault. 
 
-environment variables for run.sh:
-
-- `GOOGLE_APPLICATION_CREDENTIALS` - path to service account json file
-- `SPANNER_INSTANCE` - test spanner instance
-- `SPANNER_DATABASE` - test spannerer database
-
-Have seen same behavior using php-fpm, cli, and mod_php.
-
-
-
